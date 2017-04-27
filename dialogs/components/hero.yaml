@@ -1,0 +1,14 @@
+form:
+  label: Hello Hero
+  tabs:
+    - name: tabText
+      label: Texts
+      fields:
+        - name: subText
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Sub title
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

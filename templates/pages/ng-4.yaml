@@ -1,0 +1,11 @@
+templateScript: /hello-world/templates/pages/ng-4.ftl
+renderType: freemarker
+visible: true
+title: Angular 4 Example
+dialog: hello-world:pages/ng-4
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      quotation:
+        id: hello-world:components/hero

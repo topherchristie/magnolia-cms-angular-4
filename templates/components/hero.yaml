@@ -1,0 +1,4 @@
+templateScript: /hello-world/templates/components/hero.ftl
+renderType: freemarker
+title: Hero Hello World
+dialog: hello-world:components/hero
