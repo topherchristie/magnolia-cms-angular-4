@@ -5,8 +5,8 @@ form:
       label: Texts
       fields:
         - name: subText
-          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
-          label: Sub title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Text
 actions:
   commit:
     class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition

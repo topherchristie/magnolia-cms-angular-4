@@ -34,7 +34,6 @@
       Loading ...
   </app-root>
 
-
 <script type="text/javascript" src="${ctx.contextPath}/.resources/hello-world/webresources/angular4/dist/inline.bundle.js"></script>
 <script type="text/javascript" src="${ctx.contextPath}/.resources/hello-world/webresources/angular4/dist/polyfills.bundle.js"></script>
 <script type="text/javascript" src="${ctx.contextPath}/.resources/hello-world/webresources/angular4/dist/styles.bundle.js"></script>

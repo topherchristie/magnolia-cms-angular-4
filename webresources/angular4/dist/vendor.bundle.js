@@ -56733,7 +56733,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 /**
- * @license Angular v4.0.3
+ * @license Angular v4.1.0
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -56994,7 +56994,7 @@ var Headers = (function () {
         this._headers.forEach(function (values, name) {
             var /** @type {?} */ split = [];
             values.forEach(function (v) { return split.push.apply(split, v.split(',')); });
-            serialized[_this._normalizedNames.get(name)] = split;
+            serialized[((_this._normalizedNames.get(name)))] = split;
         });
         return serialized;
     };
@@ -57004,7 +57004,7 @@ var Headers = (function () {
      * @return {?}
      */
     Headers.prototype.getAll = function (name) {
-        return this.has(name) ? this._headers.get(name.toLowerCase()) : null;
+        return this.has(name) ? this._headers.get(name.toLowerCase()) || null : null;
     };
     /**
      * This method is not implemented.
@@ -57269,7 +57269,7 @@ function getResponseURL(xhr) {
     if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
         return xhr.getResponseHeader('X-Request-URL');
     }
-    return;
+    return null;
 }
 /**
  * @param {?} input
@@ -58212,7 +58212,7 @@ var RequestOptions = (function () {
         });
     };
     /**
-     * @param {?} params
+     * @param {?=} params
      * @return {?}
      */
     RequestOptions.prototype._mergeSearchParams = function (params) {
@@ -58493,7 +58493,7 @@ function mergeOptions(defaultOpts, providedOpts, method, url) {
     var /** @type {?} */ newOptions = defaultOpts;
     if (providedOpts) {
         // Hack so Dart can used named parameters
-        return newOptions.merge(new RequestOptions({
+        return (newOptions.merge(new RequestOptions({
             method: providedOpts.method || method,
             url: providedOpts.url || url,
             search: providedOpts.search,
@@ -58502,9 +58502,9 @@ function mergeOptions(defaultOpts, providedOpts, method, url) {
             body: providedOpts.body,
             withCredentials: providedOpts.withCredentials,
             responseType: providedOpts.responseType
-        }));
+        })));
     }
-    return newOptions.merge(new RequestOptions({ method: method, url: url }));
+    return (newOptions.merge(new RequestOptions({ method: method, url: url })));
 }
 /**
  * Performs http requests using `XMLHttpRequest` as the default backend.
@@ -58838,7 +58838,7 @@ JsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Version */]('4.0.3');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Version */]('4.1.0');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.

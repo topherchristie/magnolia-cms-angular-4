@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
-  @Input() subTitle: string;
+  @Input() text: string;
 
   constructor() { }
 

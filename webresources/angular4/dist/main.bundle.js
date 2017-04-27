@@ -39,7 +39,7 @@ module.exports = module.exports.toString();
 /***/ 137:
 /***/ (function(module, exports) {
 
-module.exports = "\n<h3>hero works!</h3>\n<p>{{subTitle}}</p>\n"
+module.exports = "<div style=\"border:solid 1px blue\">\n<h3>Angular Hero Template</h3>\n{{text}}\n</div>\n"
 
 /***/ }),
 
@@ -191,7 +191,7 @@ var HeroComponent = (function () {
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Input */])(),
     __metadata("design:type", String)
-], HeroComponent.prototype, "subTitle", void 0);
+], HeroComponent.prototype, "text", void 0);
 HeroComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-hero',
