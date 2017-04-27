@@ -14,3 +14,7 @@ It then loads the angular main.bundle.js which copies the window.mainTemplate to
 
 The rendered page shows both versions of the mgnlEditorBar, but only the original one rendered with the hero.ftl handles select, click and edit events.
 See ScreenShot01.png
+
+# Replicate issue
+clone repository and copy into magnolia 5.5 folder apache-tomcat/webapps/magnoliaAuthor/modules/ .  
+Create a new page using Angular 4 Example and add a Hero component.
